@@ -109,6 +109,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4e170dab-00ad-44b6-bb5e-e08abe010db4/id-preview-31dcd6da--97844a42-5bb3-44ba-89ed-ae7cd1cf1a47.lovable.app-1781527026506.png",
       },
+      { name: "description", content: "Create personalized birthday invitations for Luenny's first birthday celebration." },
+      { property: "og:description", content: "Create personalized birthday invitations for Luenny's first birthday celebration." },
+      { name: "twitter:description", content: "Create personalized birthday invitations for Luenny's first birthday celebration." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/LlDCELKZVsMj7xd1VjRH83JLiGU2/social-images/social-1781532772168-WhatsApp_Image_2026-06-06_at_21.34.47.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/LlDCELKZVsMj7xd1VjRH83JLiGU2/social-images/social-1781532772168-WhatsApp_Image_2026-06-06_at_21.34.47.webp" },
     ],
     links: [
       {
