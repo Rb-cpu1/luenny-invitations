@@ -8,7 +8,11 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "1º Aniversário da Luenny — 25 de Julho" },
-      { name: "description", content: "Convite para o primeiro aniversário de Luenny Eric Mulungo, 25 de Julho em Cumbeza." },
+      {
+        name: "description",
+        content:
+          "Convite para o primeiro aniversário de Luenny Eric Mulungo, 25 de Julho em Cumbeza.",
+      },
       { property: "og:title", content: "1º Aniversário da Luenny" },
       { property: "og:description", content: "25 de Julho · 11h00 · Casa dos Avós, Cumbeza" },
       { property: "og:image", content: luenny1.url },
@@ -16,7 +20,10 @@ export const Route = createFileRoute("/")({
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap",
+      },
     ],
   }),
   component: Invite,
@@ -123,7 +130,12 @@ function Invite() {
                 className="aspect-[3/4] overflow-hidden rounded-2xl ring-1 ring-primary/20"
                 style={{
                   boxShadow: "var(--shadow-card)",
-                  transform: i === 1 ? "translateY(-12px) rotate(0deg)" : i === 0 ? "rotate(-2deg)" : "rotate(2deg)",
+                  transform:
+                    i === 1
+                      ? "translateY(-12px) rotate(0deg)"
+                      : i === 0
+                        ? "rotate(-2deg)"
+                        : "rotate(2deg)",
                 }}
               >
                 <img
@@ -145,9 +157,7 @@ function Invite() {
             <br className="hidden sm:block" />
             Venha celebrar connosco este momento tão especial.”
           </p>
-          <p className="mt-3 text-center text-sm text-muted-foreground">
-            — Mamã Gércia Jenny
-          </p>
+          <p className="mt-3 text-center text-sm text-muted-foreground">— Mamã Gércia Jenny</p>
 
           {/* Details */}
           <div className="mt-12 grid sm:grid-cols-3 gap-6">
@@ -163,16 +173,27 @@ function Invite() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-6 py-3 text-sm font-medium text-primary transition-colors hover:bg-primary/20"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
               Ver Localização no Mapa
             </a>
           </div>
 
           {/* Countdown */}
           <div className="mt-12 text-center">
-            <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
-              Faltam
-            </p>
+            <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Faltam</p>
             <div className="mt-4 flex justify-center gap-3 sm:gap-5">
               {[
                 { v: d, l: "Dias" },
@@ -216,10 +237,7 @@ function Invite() {
           </div>
 
           <footer className="mt-12 pt-8 border-t border-primary/15 text-center">
-            <p
-              className="text-2xl text-primary"
-              style={{ fontFamily: "var(--font-script)" }}
-            >
+            <p className="text-2xl text-primary" style={{ fontFamily: "var(--font-script)" }}>
               Esperamos por si!
             </p>
           </footer>
@@ -233,10 +251,7 @@ function DetailCard({ label, value, sub }: { label: string; value: string; sub: 
   return (
     <div className="text-center rounded-2xl bg-secondary/40 px-4 py-6 border border-primary/10">
       <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">{label}</p>
-      <p
-        className="mt-2 text-4xl text-primary"
-        style={{ fontFamily: "var(--font-display)" }}
-      >
+      <p className="mt-2 text-4xl text-primary" style={{ fontFamily: "var(--font-display)" }}>
         {value}
       </p>
       <p className="mt-1 text-sm text-foreground/70" style={{ fontFamily: "var(--font-script)" }}>

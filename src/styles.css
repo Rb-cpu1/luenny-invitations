@@ -48,10 +48,15 @@
   --shadow-card: 0 20px 60px -15px oklch(0.4 0.12 20 / 0.2);
 }
 
-.dark { --background: oklch(0.2 0.02 25); --foreground: oklch(0.95 0.02 25); }
+.dark {
+  --background: oklch(0.2 0.02 25);
+  --foreground: oklch(0.95 0.02 25);
+}
 
 @layer base {
-  * { border-color: var(--color-border); }
+  * {
+    border-color: var(--color-border);
+  }
   body {
     background: var(--gradient-soft);
     color: var(--color-foreground);
@@ -61,20 +66,42 @@
 }
 
 @keyframes float-up {
-  0% { transform: translateY(20px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes gentle-float {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-12px) rotate(3deg); }
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
 }
 @keyframes shimmer {
-  0%, 100% { opacity: 0.6; }
-  50% { opacity: 1; }
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
 }
-.animate-float-up { animation: float-up 0.9s ease-out both; }
-.animate-gentle-float { animation: gentle-float 6s ease-in-out infinite; }
-.animate-shimmer { animation: shimmer 3s ease-in-out infinite; }
+.animate-float-up {
+  animation: float-up 0.9s ease-out both;
+}
+.animate-gentle-float {
+  animation: gentle-float 6s ease-in-out infinite;
+}
+.animate-shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+}
 
 #lovable-badge {
   display: none !important;
