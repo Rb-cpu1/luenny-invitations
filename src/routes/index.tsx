@@ -25,8 +25,9 @@ export const Route = createFileRoute("/")({
 const EVENT_DATE = new Date("2026-07-25T11:00:00");
 
 function useCountdown() {
-  const [now, setNow] = useState(() => new Date());
+  const [now, setNow] = useState(() => EVENT_DATE);
   useEffect(() => {
+    setNow(new Date());
     const i = setInterval(() => setNow(new Date()), 1000);
     return () => clearInterval(i);
   }, []);
