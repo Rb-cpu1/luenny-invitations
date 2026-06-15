@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import luenny1 from "@/assets/luenny1.jpeg.asset.json";
-import luenny2 from "@/assets/luenny2.jpeg.asset.json";
-import luenny3 from "@/assets/luenny3.jpeg.asset.json";
+const luenny1 = { url: "/images/luenny1.jpeg" };
+const luenny2 = { url: "/images/luenny2.jpeg" };
+const luenny3 = { url: "/images/luenny3.jpeg" };
 
 export const Route = createFileRoute("/")({
   head: () => ({
